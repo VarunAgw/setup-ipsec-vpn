@@ -1,3 +1,18 @@
+
+**Option 3:** Define your VPN credentials as environment variables:
+
+```bash
+# All values MUST be placed inside 'single quotes'
+# DO NOT use these special characters within values: \ " '
+wget https://raw.githubusercontent.com/VarunAgw/setup-ipsec-vpn/master/vpnsetup.sh -O vpnsetup.sh && sudo \
+VPN_IPSEC_PSK='your_ipsec_pre_shared_key' \
+VPN_USER='your_vpn_username' \
+VPN_PASSWORD='your_vpn_password' sh vpnsetup.sh
+```
+
+
+
+
 # IPsec VPN Server Auto Setup Scripts
 
 [![Build Status](https://travis-ci.org/hwdsl2/setup-ipsec-vpn.svg?branch=master)](https://travis-ci.org/hwdsl2/setup-ipsec-vpn) [![GitHub Stars](https://img.shields.io/github/stars/hwdsl2/setup-ipsec-vpn.svg?maxAge=86400)](https://github.com/hwdsl2/setup-ipsec-vpn/stargazers) [![Docker Stars](https://img.shields.io/docker/stars/hwdsl2/ipsec-vpn-server.svg?maxAge=86400)](https://github.com/hwdsl2/docker-ipsec-vpn-server) [![Docker Pulls](https://img.shields.io/docker/pulls/hwdsl2/ipsec-vpn-server.svg?maxAge=86400)](https://github.com/hwdsl2/docker-ipsec-vpn-server)
